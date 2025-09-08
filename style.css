@@ -1,0 +1,24 @@
+
+.site-footer {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+}
+
+.footer-text {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-top: 10px;
+}
+.about-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(16, 16, 91);
+}
