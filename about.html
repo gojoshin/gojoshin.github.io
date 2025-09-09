@@ -5,49 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    footer {
-            font-size: 13px;
-            color: rgb(16, 16, 91);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+<style>
 
-    .footer-text {
-            margin: 0px;
-    }
+  header {
+     font-family: Roboto;
+      padding-bottom: 10px;
+      margin-bottom: 0px;
+      text-align: center;
+      color: white;
+      background-color: black;
+  }
 
-    a {
-        margin-right: 2%;
-        border-style: solid;
-        background-color: burlywood;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
+  footer {
+      font-family: Roboto;
+      font-size: 13px;
+      color: gray;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
 
-        transition: transform 0.1s;
-    }
+  .footer-text {
+      margin: 0px;
+  }  
 
-    a:active {
-        transform: scale(0.95);
-    }
-    
-    nav {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
-    }
-  </style>
+nav {
+ font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  background-color: burlywood;
+  color: white;
+}
+
+nav-link {
+  font-family: Roboto;
+  margin-right: 2%;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+  transition: transform 0.1s;
+}
+
+nav-link:active {
+  transform: scale(0.95);
+}
+
+nav-link:hover {
+      transform: scale(1.05);       
+  }
+
+body{
+  font-family: Roboto;
+  background-color:darkblue;
+  color: white;
+  text-align: center;
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.logo {
+  width: 15%;
+}
+</style>
 </head>
 <body>
-    <header><h1>Dream Team</h1></header>
+    <header><h1>About</h1></header>
 
     <nav> 
-        <a href="index.html" class="home">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <nav-link href="index.html" class="home">Home</nav-link>
+        <nav-link href="about.html">About</nav-link>
+        <nav-link href="contact.html">Contact</nav-link>
     </nav>
 
     <table border="1">
@@ -75,17 +114,17 @@
 
   <div class="container">
     <h1>Our common hobbies:</h1>
-    <ol>
-  <ul>We enjoy music</ul>
-  <ul>We program for pratice on the side</ul>
-  <ul>We are all transfer students</ul>
-    </ol>
+  <ul>
+    <li>We enjoy music</li>
+    <li>We program for pratice on the side</li>
+    <li>We are all transfer students</li>
+  </ul>
 
     </div>
 </body>
 <footer class="site-footer">
+    <img src="img/csumb.webp"  class="logo">
     <p class="footer-text">CST336 Internet Programming. 2025&#169; Joshua, Ruben, Aminata</p>
     <p class="footer-text">Disclaimer: The information in this webpage is fictitious. It is used for academic purposes only.</p>
-    <img src="img/csumb.webp" class="footer-logo" alt="CSUMB Logo">
   </footer>
 </html>
