@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css?v=3" rel="stylesheet" />
+  <title>Lab 3 Quiz</title>
+</head>
+<body>
+  <div class="box">
+    <div class="quizBox">
+      <div class="attemptBox">
+        <p id="attemptsText"></p>
+      </div>
+      <h1>Video Game Knowledge Quiz</h1>
+
+      <label for="a1">What video game has the most sold copies?</label>
+      <input id="a1" />
+      <p id="a1-result"></p>
+
+      <p>What is the most popular video game client on PC?</p>
+      <input type="radio" id="battlenet" name="launchers" value="battlenet" />
+      <label for="battlenet">Battlenet</label>
+
+      <input type="radio" id="steam" name="launchers" value="steam" />
+      <label for="steam">Steam</label>
+
+      <input type="radio" id="epic" name="launchers" value="epic" />
+      <label for="epic">Epic Games</label>
+
+      <input type="radio" id="riot" name="launchers" value="riot" />
+      <label for="riot">Riot Games</label>
+      <p id="a2-result"></p>
+
+      <p>What year did the Playstation release?</p>
+      <select name="POV" id="POV">
+        <option value="1991">1991</option>
+        <option value="1992">1992</option>
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+      </select>
+      <p id="a3-result"></p>
+
+      <label for="numberInput">How many Super Smash Bros. games are there?</label>
+      <input type="number" id="numberInput" min="1" max="11" step="1" />
+      <p id="a4-result"></p>
+
+      <p>What console has Nintendo exclusive games?</p>
+      <div id="checkbox-container">
+        <label class="option"><input type="checkbox" name="device" value="Switch" /> Switch</label>
+        <label class="option"><input type="checkbox" name="device" value="Playstation" /> Playstation</label>
+        <label class="option"><input type="checkbox" name="device" value="Xbox" /> Xbox</label>
+        <label class="option"><input type="checkbox" name="device" value="steamDeck" /> Steam Deck</label>
+      </div>
+      <p id="a5-result"></p>
+
+      <button id="submit" type="button">Submit</button>
+      <div class="scoreBox">
+        <h5 id="scoreText"></h5>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.7/underscore-umd-min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
